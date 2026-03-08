@@ -1,19 +1,24 @@
 import pytest
-from src.api_client import IntelXClient
+from src.api_client import BreachDirectoryClient
 
-def test_intesx_simulation_result():
+def test_breach_directory_simulation_result():
     #test simulation system is return correct result
-    client = IntelXClient(api_key=" ")
+    client = BreachDirectoryClient(api_key=" ")
     test_email = "test@example.com"
 
     result = client.check_breach(test_email)
 
     #test infrastructure (assertion)
     assert result['email_address'] == test_email
-    assert isinstance(result['breached'], bool)
-    assert 'site_where_breached' in result
+    assert 'found' in result
+    assert isinstance(result['found'], bool)
+    assert 'sources' in result
 
-def test_api_client_simulation_mode_toggle():
-    #test if input api key the system will turn the simulation mode off or not or willing to connect to wrong api key
-    client_sim = IntelXClient(api_key=" ")
-    client_real = IntelXClient(api_key= "actual-key-123")
+def test_client_mode_logic():
+    #test if not api key the simulation mode will be True
+    client_no_key = BreachDirectoryClient(api_key="")
+    assert client_no_key.simulation_mode is True
+
+    #test if api key the simulation mode is turn off and will be False
+    client_with_key = BreachDirectoryClient(api_key="12345-abcde")
+    assert client_with_key.simulation_mode is False
