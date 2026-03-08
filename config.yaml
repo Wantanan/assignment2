@@ -1,0 +1,13 @@
+#Set up system for ALC risk assessment
+api:
+  timeout: 30
+  max_retries: 3
+  simultion_mode: true
+
+files:
+  input: "email_list.csv"
+  output: "output_result.csv"
+  log_path: "logs/alc_scanner.log"
+
+thresholds:
+  delay_between_request: 1.0
