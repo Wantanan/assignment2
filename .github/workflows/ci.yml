@@ -8,7 +8,7 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: ubantu-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
@@ -21,9 +21,14 @@ jobs:
     
     - name: Install dependencies
       run: |
-        python -m pip Install --upgrade pip
-        pip Install flake8 httpx python-dotenv PyYAML
+        python -m pip install --upgrade pip
+        pip Install flake8 httpx python-dotenv PyYAML pytest pytest-asyncio
 
     - name: Lint with flake8
       run: |
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+
+    - name: Run tests with pytest
+      run: |
+        export PYTHONPATH=$PYTHONPATH:$(pwd)
+        pytest
