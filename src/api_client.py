@@ -7,11 +7,15 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class BreachDirectoryClient:
-    def __init__(self):
-        self.api_key = os.getenv("BREACHDIRECTORY_API_KEY")
-        self.host = os.getenv("BREACHDIRECTORY_HOST")
+    def __init__(self, api_key= None):
+        self.api_key = api_key or os.getenv("BREACHDIRECTORY_API_KEY")
+        self.host = os.getenv("BREACHDIRECTORY_HOST") or "breachdirectory.p.rapidapi.com"
         print(f"Debug: BranchDirectory key length = {len(self.api_key) if self.api_key else 0}")
         
+        self.simulation_mode = not bool(self.api_key)
+        if not self.simulation_mode:
+            print(f"Debug: BreachDirectory key length = {len(self.api_key)}")
+
         self.base_url = "https://breachdirectory.p.rapidapi.com/"
 
         self.headers = {
@@ -21,6 +25,14 @@ class BreachDirectoryClient:
 
     async def check_breach(self, client: httpx.AsyncClient,email: str) -> dict:
         logging.info(f"Checking BreachDirectory for: {email}")
+
+        if self.simulation_mode:
+            await asyncio.sleep(0.1)
+            return {
+                "email_address": email,
+                "breached": True,
+                "site_where_breached" : ["simulation_site.com"]
+            }
 
         params = {
             "func" : "auto",

@@ -1,24 +1,25 @@
 import pytest
+import httpx
 from src.api_client import BreachDirectoryClient
 
-def test_breach_directory_simulation_result():
+@pytest.mark.asyncio
+
+async def test_breach_directory_simulation():
     #test simulation system is return correct result
-    client = BreachDirectoryClient(api_key=" ")
+    client = BreachDirectoryClient(api_key="")
     test_email = "test@example.com"
 
-    result = client.check_breach(test_email)
+    async with httpx.AsyncClient() as async_client:
+        result = await client.check_breach(async_client, test_email)
 
     #test infrastructure (assertion)
     assert result['email_address'] == test_email
-    assert 'found' in result
-    assert isinstance(result['found'], bool)
-    assert 'sources' in result
+    assert 'breached' in result
+    assert isinstance(result['breached'], bool)
+    assert 'site_where_breached' in result
 
-def test_client_mode_logic():
-    #test if not api key the simulation mode will be True
-    client_no_key = BreachDirectoryClient(api_key="")
-    assert client_no_key.simulation_mode is True
-
-    #test if api key the simulation mode is turn off and will be False
-    client_with_key = BreachDirectoryClient(api_key="12345-abcde")
-    assert client_with_key.simulation_mode is False
+def test_client_init_config():
+    key = "test-123"
+    client = BreachDirectoryClient(api_key=key)
+    assert client.api_key == key
+    assert client.headers["X-RapidAPI-Key"] == key

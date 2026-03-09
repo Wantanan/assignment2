@@ -309,3 +309,39 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 2026-03-08 20:05:23,071 [INFO] HTTP Request: GET https://breachdirectory-backend.onrender.com/rapidapi-IscustemTaingtowItrionne?func=auto&term=mike.catlin%40polarcapital.co.uk "HTTP/1.1 200 OK"
 2026-03-08 20:05:23,076 [INFO] save the result in output_result.csv successful.
 2026-03-08 20:05:23,076 [INFO]  Testing is successful, Check result at output_result.csv
+2026-03-09 00:02:27,432 [INFO] --- Begining ALC Risk Assessment Tool System 
+2026-03-09 00:02:27,433 [INFO] The email have load 4 list.
+2026-03-09 00:02:27,476 [INFO] Starting async check for 4 email...
+2026-03-09 00:02:27,476 [INFO] Checking BreachDirectory for: example@example.com
+2026-03-09 00:02:27,480 [INFO] Checking BreachDirectory for: mike.catlin@polarcapital.co.uk
+2026-03-09 00:02:27,481 [INFO] Checking BreachDirectory for: admin@steel-gamers.ru
+2026-03-09 00:02:27,481 [INFO] Checking BreachDirectory for: admin@belfastmet.ac.uk
+2026-03-09 00:02:27,611 [INFO] HTTP Request: GET https://breachdirectory.p.rapidapi.com/?func=auto&term=admin%40belfastmet.ac.uk "HTTP/1.1 429 Too Many Requests"
+2026-03-09 00:02:27,611 [ERROR] BreachDirectory API Error for admin@belfastmet.ac.uk: Client error '429 Too Many Requests' for url 'https://breachdirectory.p.rapidapi.com/?func=auto&term=admin%40belfastmet.ac.uk'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-03-09 00:02:27,848 [INFO] HTTP Request: GET https://breachdirectory.p.rapidapi.com/?func=auto&term=admin%40steel-gamers.ru "HTTP/1.1 307 Temporary Redirect"
+2026-03-09 00:02:27,873 [INFO] HTTP Request: GET https://breachdirectory.p.rapidapi.com/?func=auto&term=example%40example.com "HTTP/1.1 307 Temporary Redirect"
+2026-03-09 00:02:28,172 [INFO] HTTP Request: GET https://breachdirectory.p.rapidapi.com/?func=auto&term=mike.catlin%40polarcapital.co.uk "HTTP/1.1 307 Temporary Redirect"
+2026-03-09 00:02:28,955 [INFO] HTTP Request: GET https://breachdirectory-backend.onrender.com/rapidapi-IscustemTaingtowItrionne?func=auto&term=admin%40steel-gamers.ru "HTTP/1.1 200 OK"
+2026-03-09 00:02:30,267 [INFO] HTTP Request: GET https://api.breachdirectory.org/rapidapi-IscustemTaingtowItrionne?func=auto&term=example%40example.com "HTTP/1.1 200 OK"
+2026-03-09 00:02:30,511 [INFO] HTTP Request: GET https://breachdirectory-backend.onrender.com/rapidapi-IscustemTaingtowItrionne?func=auto&term=mike.catlin%40polarcapital.co.uk "HTTP/1.1 200 OK"
+2026-03-09 00:02:30,517 [INFO] save the result in output_result.csv successful.
+2026-03-09 00:02:30,517 [INFO]  Testing is successful, Check result at output_result.csv
+2026-03-09 00:03:40,712 [INFO] --- Begining ALC Risk Assessment Tool System 
+2026-03-09 00:03:40,713 [INFO] The email have load 4 list.
+2026-03-09 00:03:40,760 [INFO] Starting async check for 4 email...
+2026-03-09 00:03:40,760 [INFO] Checking BreachDirectory for: example@example.com
+2026-03-09 00:03:40,764 [INFO] Checking BreachDirectory for: mike.catlin@polarcapital.co.uk
+2026-03-09 00:03:40,764 [INFO] Checking BreachDirectory for: admin@steel-gamers.ru
+2026-03-09 00:03:40,764 [INFO] Checking BreachDirectory for: admin@belfastmet.ac.uk
+2026-03-09 00:03:40,938 [INFO] HTTP Request: GET https://breachdirectory.p.rapidapi.com/?func=auto&term=example%40example.com "HTTP/1.1 429 Too Many Requests"
+2026-03-09 00:03:40,939 [ERROR] BreachDirectory API Error for example@example.com: Client error '429 Too Many Requests' for url 'https://breachdirectory.p.rapidapi.com/?func=auto&term=example%40example.com'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-03-09 00:03:41,129 [INFO] HTTP Request: GET https://breachdirectory.p.rapidapi.com/?func=auto&term=admin%40belfastmet.ac.uk "HTTP/1.1 307 Temporary Redirect"
+2026-03-09 00:03:41,133 [INFO] HTTP Request: GET https://breachdirectory.p.rapidapi.com/?func=auto&term=admin%40steel-gamers.ru "HTTP/1.1 307 Temporary Redirect"
+2026-03-09 00:03:41,135 [INFO] HTTP Request: GET https://breachdirectory.p.rapidapi.com/?func=auto&term=mike.catlin%40polarcapital.co.uk "HTTP/1.1 307 Temporary Redirect"
+2026-03-09 00:03:42,587 [INFO] HTTP Request: GET https://api.breachdirectory.org/rapidapi-IscustemTaingtowItrionne?func=auto&term=admin%40belfastmet.ac.uk "HTTP/1.1 200 OK"
+2026-03-09 00:03:42,641 [INFO] HTTP Request: GET https://api.breachdirectory.org/rapidapi-IscustemTaingtowItrionne?func=auto&term=mike.catlin%40polarcapital.co.uk "HTTP/1.1 200 OK"
+2026-03-09 00:03:51,262 [INFO] HTTP Request: GET https://api.breachdirectory.org/rapidapi-IscustemTaingtowItrionne?func=auto&term=admin%40steel-gamers.ru "HTTP/1.1 200 OK"
+2026-03-09 00:03:51,265 [INFO] save the result in output_result.csv successful.
+2026-03-09 00:03:51,265 [INFO]  Testing is successful, Check result at output_result.csv
