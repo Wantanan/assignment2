@@ -473,3 +473,25 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 2026-03-10 12:30:20,721 [INFO] HTTP Request: GET https://breachdirectory-backend.onrender.com/rapidapi-IscustemTaingtowItrionne?func=auto&term=l.anson%40redxpharma.com "HTTP/1.1 200 OK"
 2026-03-10 12:30:20,724 [INFO] save the result in output_result.csv successful.
 2026-03-10 12:30:20,724 [INFO]  Testing is successful, Check result at output_result.csv
+2026-03-10 12:43:35,924 [INFO] --- Begining ALC Risk Assessment Tool System 
+2026-03-10 12:43:35,926 [INFO] The email have load 5 list.
+2026-03-10 12:43:35,967 [INFO] Starting async check for 5 email...
+2026-03-10 12:43:35,968 [INFO] Checking BreachDirectory for: richard.potter@peak.ai
+2026-03-10 12:43:35,971 [INFO] Checking BreachDirectory for: ryanbidinger@cwi.edu
+2026-03-10 12:43:35,971 [INFO] Checking BreachDirectory for: jamatrucola@regis.org
+2026-03-10 12:43:35,971 [INFO] Checking BreachDirectory for: andy.powell@toolpath.com
+2026-03-10 12:43:35,972 [INFO] Checking BreachDirectory for: tuk0623439767@gmail.com
+2026-03-10 12:43:36,094 [INFO] HTTP Request: GET https://breachdirectory.p.rapidapi.com/?func=auto&term=andy.powell%40toolpath.com "HTTP/1.1 429 Too Many Requests"
+2026-03-10 12:43:36,094 [INFO] HTTP Request: GET https://breachdirectory.p.rapidapi.com/?func=auto&term=richard.potter%40peak.ai "HTTP/1.1 429 Too Many Requests"
+2026-03-10 12:43:36,094 [ERROR] BreachDirectory API Error for andy.powell@toolpath.com: Client error '429 Too Many Requests' for url 'https://breachdirectory.p.rapidapi.com/?func=auto&term=andy.powell%40toolpath.com'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-03-10 12:43:36,094 [ERROR] BreachDirectory API Error for richard.potter@peak.ai: Client error '429 Too Many Requests' for url 'https://breachdirectory.p.rapidapi.com/?func=auto&term=richard.potter%40peak.ai'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-03-10 12:43:36,276 [INFO] HTTP Request: GET https://breachdirectory.p.rapidapi.com/?func=auto&term=tuk0623439767%40gmail.com "HTTP/1.1 307 Temporary Redirect"
+2026-03-10 12:43:36,279 [INFO] HTTP Request: GET https://breachdirectory.p.rapidapi.com/?func=auto&term=jamatrucola%40regis.org "HTTP/1.1 307 Temporary Redirect"
+2026-03-10 12:43:36,324 [INFO] HTTP Request: GET https://breachdirectory.p.rapidapi.com/?func=auto&term=ryanbidinger%40cwi.edu "HTTP/1.1 307 Temporary Redirect"
+2026-03-10 12:43:37,453 [INFO] HTTP Request: GET https://breachdirectory-backend.onrender.com/rapidapi-IscustemTaingtowItrionne?func=auto&term=tuk0623439767%40gmail.com "HTTP/1.1 200 OK"
+2026-03-10 12:43:37,492 [INFO] HTTP Request: GET https://api.breachdirectory.org/rapidapi-IscustemTaingtowItrionne?func=auto&term=jamatrucola%40regis.org "HTTP/1.1 200 OK"
+2026-03-10 12:43:37,626 [INFO] HTTP Request: GET https://api.breachdirectory.org/rapidapi-IscustemTaingtowItrionne?func=auto&term=ryanbidinger%40cwi.edu "HTTP/1.1 200 OK"
+2026-03-10 12:43:37,630 [INFO] save the result in output_result.csv successful.
+2026-03-10 12:43:37,630 [INFO]  Testing is successful, Check result at output_result.csv

@@ -1,8 +1,8 @@
 email_address                      ,breached  ,site_where_breached
-richard.potter@peak.ai             ,N         ,No breach found
-l.anson@redxpharma.com             ,N         ,No breach found
-ahancock@rubiconsoftware.com       ,N         ,"Error: Client error '429 Too Many Requests' for url 'https://breachdirectory.p.rapidapi.com/?func=auto&term=ahancock%40rubiconsoftware.com'
+richard.potter@peak.ai             ,N         ,"Error: Client error '429 Too Many Requests' for url 'https://breachdirectory.p.rapidapi.com/?func=auto&term=richard.potter%40peak.ai'
 For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
-daniel@sundried.com                ,N         ,"Error: Client error '429 Too Many Requests' for url 'https://breachdirectory.p.rapidapi.com/?func=auto&term=daniel%40sundried.com'
+ryanbidinger@cwi.edu               ,N         ,No breach found
+jamatrucola@regis.org              ,N         ,No breach found
+andy.powell@toolpath.com           ,N         ,"Error: Client error '429 Too Many Requests' for url 'https://breachdirectory.p.rapidapi.com/?func=auto&term=andy.powell%40toolpath.com'
 For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
-t0623439767@gmail.com              ,N         ,No breach found
+tuk0623439767@gmail.com            ,N         ,No breach found
