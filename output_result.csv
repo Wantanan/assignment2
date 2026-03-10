@@ -1,6 +1,6 @@
 email_address                      ,breached  ,site_where_breached
-example@example.com                ,N         ,"Error: Client error '429 Too Many Requests' for url 'https://breachdirectory.p.rapidapi.com/?func=auto&term=example%40example.com'
+example@example.com                ,N         ,No breach found
+mike.catlin@polarcapital.co.uk     ,N         ,"Error: Client error '429 Too Many Requests' for url 'https://breachdirectory.p.rapidapi.com/?func=auto&term=mike.catlin%40polarcapital.co.uk'
 For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
-mike.catlin@polarcapital.co.uk     ,N         ,No breach found
 admin@steel-gamers.ru              ,N         ,No breach found
 admin@belfastmet.ac.uk             ,N         ,No breach found
