@@ -2,7 +2,7 @@ email_address                      ,breached  ,site_where_breached
 richard.potter@peak.ai             ,N         ,"Error: Client error '429 Too Many Requests' for url 'https://breachdirectory.p.rapidapi.com/?func=auto&term=richard.potter%40peak.ai'
 For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
 ryanbidinger@cwi.edu               ,N         ,No breach found
-jamatrucola@regis.org              ,N         ,No breach found
-andy.powell@toolpath.com           ,N         ,"Error: Client error '429 Too Many Requests' for url 'https://breachdirectory.p.rapidapi.com/?func=auto&term=andy.powell%40toolpath.com'
+jamatrucola@regis.org              ,N         ,"Error: Client error '429 Too Many Requests' for url 'https://breachdirectory.p.rapidapi.com/?func=auto&term=jamatrucola%40regis.org'
 For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+andy.powell@toolpath.com           ,N         ,No breach found
 tuk0623439767@gmail.com            ,N         ,No breach found

@@ -37,10 +37,6 @@ async def run_app():
 
         final_results = await asyncio.gather(*tasks)
 
-    # #looping test each email
-    # for email in emails:
-    #     result = client.check_breach(email)
-    #     final_results.append(result)
 
     #save the result
     output_file = 'output_result.csv'
@@ -50,5 +46,4 @@ async def run_app():
 
 if __name__ == "__main__":
     asyncio.run(run_app())        
-    
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+
